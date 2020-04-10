@@ -1,0 +1,13 @@
+prefix=/home/allysonalvimribeiro/Documentos/sample_project/env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.9.9
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:  -lpthread -L/home/allysonalvimribeiro/Documentos/sample_project/env/lib -lz -L/home/allysonalvimribeiro/Documentos/sample_project/env/lib -llzma -L/home/allysonalvimribeiro/Documentos/sample_project/env/lib -lm  
+Cflags: -I${includedir}/libxml2 -I/home/allysonalvimribeiro/Documentos/sample_project/env/include 

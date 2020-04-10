@@ -1,0 +1,14 @@
+prefix=/home/allysonalvimribeiro/Documentos/sample_project/env
+exec_prefix=/home/allysonalvimribeiro/Documentos/sample_project/env
+libdir=/home/allysonalvimribeiro/Documentos/sample_project/env/lib
+includedir=/home/allysonalvimribeiro/Documentos/sample_project/env/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 22.1.16
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -L/home/allysonalvimribeiro/Documentos/sample_project/env/lib -lpng16 -lm -lz -lm
+Cflags: -I${includedir}/freetype2
